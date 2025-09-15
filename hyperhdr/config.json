@@ -1,0 +1,17 @@
+{
+  "name": "HyperHDR",
+  "version": "21.0.0.0",
+  "slug": "hyperhdr",
+  "description": "HyperHDR for Home Assistant (USB Capture, MJPEG/YUYV Support)",
+  "arch": ["amd64", "aarch64"],
+  "startup": "services",
+  "boot": "auto",
+  "ports": {
+    "8090/tcp": 8090
+  },
+  "webui": "http://[HOST]:[PORT:8090]",
+  "host_network": true,
+  "devices": ["/dev/video0:/dev/video0:rwm"],
+  "options": {},
+  "schema": {}
+}
